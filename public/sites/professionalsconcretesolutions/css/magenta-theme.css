@@ -1,0 +1,533 @@
+/* ==========================================================================
+   FILE: magenta-theme.css
+   PROJECT: Gulf Coast Builders HTML5 Template
+
+   PURPOSE:
+   Magenta industry color overlay.
+   Recommended for: Media, nightlife, entertainment, fashion, and digital agencies.
+
+   HOW TO LOAD:
+   Keep the existing structural and light/dark theme files, then load this
+   file last.
+
+   DARK PAGE:
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/dark-theme.css">
+   <link rel="stylesheet" href="css/magenta-theme.css">
+
+   LIGHT PAGE:
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/light-theme.css">
+   <link rel="stylesheet" href="css/magenta-theme.css">
+
+   IMPORTANT:
+   The custom-property name --orange-gradient remains unchanged because
+   base.css already references it throughout the template. This file replaces
+   its value with the magenta gradient.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. SHARED MAGENTA ACCENT SYSTEM
+   ========================================================================== */
+
+.site--dark,
+.site--light {
+  --orange-gradient:
+    linear-gradient(
+      105deg,
+      #c83f9a 0%,
+      #7f236d 100%
+    );
+
+  --accent-color: #a53284;
+  --accent-light: #d775b6;
+  --accent-bright: #c83f9a;
+  --accent-deep: #7f236d;
+
+  --accent-border: rgba(200, 63, 154, 0.48);
+  --accent-ring-color: rgba(165, 50, 132, 0.12);
+  --accent-glow-color: rgba(165, 50, 132, 0.42);
+  --accent-soft-glow: rgba(165, 50, 132, 0.2);
+
+  --selection-text: #ffffff;
+
+  --hero-pointer-glow: rgba(165, 50, 132, 0.12);
+  --hero-secondary-glow: rgba(200, 63, 154, 0.075);
+
+  --card-pointer-glow: rgba(165, 50, 132, 0.09);
+  --media-glow-color: rgba(165, 50, 132, 0.26);
+
+  --star-color: #c83f9a;
+  --star-glow: rgba(165, 50, 132, 0.26);
+
+  --conversion-glow: rgba(165, 50, 132, 0.2);
+
+  --button-primary-text: #ffffff;
+  --button-primary-shadow: rgba(200, 63, 154, 0.28);
+  --button-primary-hover-shadow: rgba(165, 50, 132, 0.42);
+
+  --nav-link-hover-background: rgba(165, 50, 132, 0.1);
+  --dropdown-link-hover-background: rgba(165, 50, 132, 0.13);
+  --social-hover-background: rgba(165, 50, 132, 0.11);
+
+  --faq-icon-background: rgba(165, 50, 132, 0.07);
+}
+
+
+/* ==========================================================================
+   2. DARK-PAGE MAGENTA CONTRAST
+   ========================================================================== */
+
+.site--dark {
+  --button-outline-text: #df90c4;
+  --button-outline-background: rgba(165, 50, 132, 0.025);
+  --button-outline-border: rgba(165, 50, 132, 0.6);
+
+  --button-outline-hover-text: #ffffff;
+  --button-outline-hover-background: #a53284;
+  --button-outline-hover-border: #a53284;
+  --button-outline-shadow: rgba(165, 50, 132, 0.2);
+
+  --nav-link-hover-color: #df90c4;
+  --nav-link-active-color: #df90c4;
+  --dropdown-link-hover-color: #df90c4;
+
+  --menu-toggle-color: #df90c4;
+  --menu-toggle-background: rgba(165, 50, 132, 0.055);
+  --menu-toggle-border: rgba(165, 50, 132, 0.54);
+
+  --sticky-header-shadow:
+    0 18px 52px rgba(0, 0, 0, 0.50),
+    0 1px 0 rgba(165, 50, 132, 0.14);
+
+  --card-hover-shadow:
+    0 34px 78px rgba(0, 0, 0, 0.52),
+    0 0 38px rgba(165, 50, 132, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  --media-frame-shadow:
+    0 32px 90px rgba(0, 0, 0, 0.52),
+    0 0 0 1px rgba(165, 50, 132, 0.18),
+    0 0 47px rgba(165, 50, 132, 0.12);
+
+  --trust-card-hover-shadow:
+    0 18px 37px rgba(0, 0, 0, 0.28),
+    0 0 24px rgba(165, 50, 132, 0.13);
+}
+
+
+/* ==========================================================================
+   3. LIGHT-PAGE MAGENTA CONTRAST
+   ========================================================================== */
+
+.site--light {
+  --button-outline-text: #4f1644;
+  --button-outline-background: rgba(255, 255, 255, 0.78);
+  --button-outline-border: rgba(200, 63, 154, 0.72);
+
+  --button-outline-hover-text: #ffffff;
+  --button-outline-hover-background: #a53284;
+  --button-outline-hover-border: #a53284;
+  --button-outline-shadow: rgba(200, 63, 154, 0.24);
+
+  --nav-link-hover-color: #4f1644;
+  --nav-link-active-color: #4f1644;
+  --dropdown-link-hover-color: #4f1644;
+
+  --menu-toggle-color: #4f1644;
+  --menu-toggle-background: rgba(255, 255, 255, 0.78);
+  --menu-toggle-border: rgba(200, 63, 154, 0.58);
+
+  --sticky-header-shadow:
+    0 18px 52px rgba(17, 17, 17, 0.16),
+    0 1px 0 rgba(200, 63, 154, 0.18);
+
+  --card-hover-shadow:
+    0 32px 72px rgba(17, 17, 17, 0.15),
+    0 0 34px rgba(165, 50, 132, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
+
+  --media-frame-shadow:
+    0 32px 80px rgba(17, 17, 17, 0.13),
+    0 0 0 1px rgba(200, 63, 154, 0.2),
+    0 0 40px rgba(165, 50, 132, 0.12);
+
+  --trust-card-hover-shadow:
+    0 18px 38px rgba(17, 17, 17, 0.11),
+    0 0 24px rgba(165, 50, 132, 0.12);
+}
+
+
+/* ==========================================================================
+   4. DARK-PAGE AMBIENT BACKGROUNDS
+   ========================================================================== */
+
+.site--dark .section {
+  background:
+    radial-gradient(
+      circle at 78% 22%,
+      rgba(165, 50, 132, 0.095),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 85%,
+      rgba(200, 63, 154, 0.065),
+      transparent 25%
+    ),
+    var(--section-background);
+}
+
+.site--dark .section:nth-of-type(even) {
+  background:
+    radial-gradient(
+      circle at 17% 18%,
+      rgba(165, 50, 132, 0.07),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 92% 88%,
+      rgba(200, 63, 154, 0.055),
+      transparent 23%
+    ),
+    var(--section-background);
+}
+
+.site--dark .section--about,
+.site--dark .section--services,
+.site--dark .section--reviews,
+.site--dark .section--faq {
+  background:
+    radial-gradient(
+      circle at 78% 24%,
+      rgba(165, 50, 132, 0.11),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 8% 84%,
+      rgba(200, 63, 154, 0.07),
+      transparent 25%
+    ),
+    #080808;
+}
+
+.site--dark .section--proof,
+.site--dark .section--process {
+  background:
+    radial-gradient(
+      circle at 72% 27%,
+      rgba(165, 50, 132, 0.1),
+      transparent 27%
+    ),
+    #090909;
+}
+
+.site--dark .hero {
+  background:
+    radial-gradient(
+      circle at
+      var(--pointer-x, 72%)
+      var(--pointer-y, 22%),
+      rgba(165, 50, 132, 0.12),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 78%,
+      rgba(200, 63, 154, 0.075),
+      transparent 25%
+    ),
+    #080808;
+}
+
+
+/* ==========================================================================
+   5. LIGHT-PAGE AMBIENT BACKGROUNDS
+   ========================================================================== */
+
+.site--light .section {
+  background:
+    radial-gradient(
+      circle at 78% 22%,
+      rgba(165, 50, 132, 0.075),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 85%,
+      rgba(200, 63, 154, 0.045),
+      transparent 25%
+    ),
+    var(--section-background);
+}
+
+.site--light .section:nth-of-type(even) {
+  background:
+    radial-gradient(
+      circle at 17% 18%,
+      rgba(165, 50, 132, 0.055),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 92% 88%,
+      rgba(200, 63, 154, 0.04),
+      transparent 23%
+    ),
+    var(--section-background);
+}
+
+.site--light .section--about,
+.site--light .section--process,
+.site--light .section--reviews {
+  background:
+    radial-gradient(
+      circle at 78% 25%,
+      rgba(165, 50, 132, 0.085),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 8% 84%,
+      rgba(200, 63, 154, 0.045),
+      transparent 24%
+    ),
+    #f7f7f4;
+}
+
+.site--light .section--proof,
+.site--light .section--services,
+.site--light .section--faq {
+  background:
+    radial-gradient(
+      circle at 76% 24%,
+      rgba(165, 50, 132, 0.07),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 86%,
+      rgba(200, 63, 154, 0.04),
+      transparent 25%
+    ),
+    #ffffff;
+}
+
+.site--light .hero {
+  background:
+    radial-gradient(
+      circle at
+      var(--pointer-x, 72%)
+      var(--pointer-y, 22%),
+      rgba(165, 50, 132, 0.095),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 80%,
+      rgba(200, 63, 154, 0.055),
+      transparent 25%
+    ),
+    #ffffff;
+}
+
+
+/* ==========================================================================
+   6. CARD AND PANEL LIGHTING
+   ========================================================================== */
+
+.site--dark .about-card {
+  background:
+    radial-gradient(
+      circle at 87% 12%,
+      rgba(165, 50, 132, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(28, 28, 28, 0.97),
+      rgba(10, 10, 10, 0.99)
+    );
+}
+
+.site--light .about-card {
+  background:
+    radial-gradient(
+      circle at 87% 12%,
+      rgba(165, 50, 132, 0.085),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(247, 247, 244, 0.97)
+    );
+}
+
+.site--dark .proof-metric,
+.site--dark .process-card,
+.site--dark .review-card,
+.site--dark .faq-item {
+  background:
+    radial-gradient(
+      circle at
+      var(--pointer-x, 50%)
+      var(--pointer-y, 30%),
+      rgba(165, 50, 132, 0.095),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(27, 27, 27, 0.98),
+      rgba(11, 11, 11, 0.99)
+    );
+}
+
+.site--light .proof-metric,
+.site--light .process-card,
+.site--light .review-card,
+.site--light .faq-item {
+  background:
+    radial-gradient(
+      circle at
+      var(--pointer-x, 50%)
+      var(--pointer-y, 30%),
+      rgba(165, 50, 132, 0.075),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.99),
+      rgba(247, 247, 244, 0.98)
+    );
+}
+
+.site--dark .service-card__wide-copy {
+  background:
+    radial-gradient(
+      circle at 92% 12%,
+      rgba(165, 50, 132, 0.14),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #191919,
+      #0d0d0d
+    );
+}
+
+.site--light .service-card__wide-copy {
+  background:
+    radial-gradient(
+      circle at 92% 12%,
+      rgba(165, 50, 132, 0.095),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f4f4f1
+    );
+}
+
+.site--dark .site-footer,
+.site--light .site-footer {
+  background:
+    radial-gradient(
+      circle at 84% 10%,
+      rgba(165, 50, 132, 0.1),
+      transparent 24%
+    ),
+    var(--footer-background);
+}
+
+
+/* ==========================================================================
+   7. FAQ, NAVIGATION, AND LOGO DETAILS
+   ========================================================================== */
+
+.site--dark .faq-item button i {
+  color: #df90c4;
+  background: rgba(165, 50, 132, 0.065);
+  border-color: rgba(165, 50, 132, 0.42);
+}
+
+.site--light .faq-item button i {
+  color: #4f1644;
+  background: rgba(165, 50, 132, 0.075);
+  border-color: rgba(200, 63, 154, 0.52);
+}
+
+.site--dark .faq-item button > span,
+.site--light .faq-item button > span {
+  transition:
+    color var(--transition-normal),
+    background-color var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.site--dark .brand:hover img,
+.site--dark .brand:focus-visible img,
+.site--light .brand:hover img,
+.site--light .brand:focus-visible img {
+  filter:
+    drop-shadow(
+      0 9px 13px
+      rgba(79, 22, 68, 0.22)
+    );
+}
+
+
+/* ==========================================================================
+   8. MAGENTA SCROLLBARS
+   ========================================================================== */
+
+@supports selector(::-webkit-scrollbar) {
+  html[data-theme="dark"]::-webkit-scrollbar-thumb,
+  html[data-theme="dark"] *::-webkit-scrollbar-thumb,
+  html[data-theme="light"]::-webkit-scrollbar-thumb,
+  html[data-theme="light"] *::-webkit-scrollbar-thumb {
+    background:
+      linear-gradient(
+        180deg,
+        #d775b6,
+        #7f236d
+      );
+  }
+
+  html[data-theme="dark"]::-webkit-scrollbar-thumb:hover,
+  html[data-theme="dark"] *::-webkit-scrollbar-thumb:hover,
+  html[data-theme="light"]::-webkit-scrollbar-thumb:hover,
+  html[data-theme="light"] *::-webkit-scrollbar-thumb:hover {
+    background:
+      linear-gradient(
+        180deg,
+        #df90c4,
+        #a53284
+      );
+  }
+}
+
+html[data-theme="dark"],
+html[data-theme="light"] {
+  scrollbar-color:
+    #a53284
+    var(--page-background);
+}
+
+
+/* ==========================================================================
+   9. HIGH-CONTRAST SUPPORT
+   ========================================================================== */
+
+@media (prefers-contrast: more) {
+  .site--dark {
+    --button-outline-text: #df90c4;
+    --nav-link-hover-color: #df90c4;
+    --nav-link-active-color: #df90c4;
+    --dropdown-link-hover-color: #df90c4;
+  }
+
+  .site--light {
+    --button-outline-text: #4f1644;
+    --nav-link-hover-color: #4f1644;
+    --nav-link-active-color: #4f1644;
+    --dropdown-link-hover-color: #4f1644;
+  }
+}

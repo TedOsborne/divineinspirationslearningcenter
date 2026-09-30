@@ -1,0 +1,9 @@
+.carouselSlider .title, .carouselSlider .price{
+    color: #000000;
+}
+.carouselSlider p{
+    margin-bottom: 0;
+}
+.carouselWrapper{
+    margin-bottom: 20px;
+}

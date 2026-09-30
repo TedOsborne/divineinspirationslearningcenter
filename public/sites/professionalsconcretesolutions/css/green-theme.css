@@ -1,0 +1,608 @@
+/* ==========================================================================
+   FILE: green-theme.css
+   PROJECT: Gulf Coast Builders HTML5 Template
+
+   PURPOSE:
+   Professional construction-green accent overlay.
+
+   HOW TO LOAD:
+   Keep the existing structural and light/dark theme files, then load this
+   file last.
+
+   DARK PAGE:
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/dark-theme.css">
+   <link rel="stylesheet" href="css/green-theme.css">
+
+   LIGHT PAGE:
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/light-theme.css">
+   <link rel="stylesheet" href="css/green-theme.css">
+
+   IMPORTANT:
+   The custom-property name --orange-gradient is retained because base.css
+   already uses that variable throughout the template. Its value is replaced
+   here with the new green gradient.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. SHARED GREEN ACCENT SYSTEM
+   ========================================================================== */
+
+.site--dark,
+.site--light {
+  --orange-gradient:
+    linear-gradient(
+      105deg,
+      #90b945 0%,
+      #5b8a3c 100%
+    );
+
+  --accent-color: #739f40;
+  --accent-light: #abc96f;
+  --accent-bright: #90b945;
+  --accent-deep: #5b8a3c;
+
+  --accent-border: rgba(144, 185, 69, 0.48);
+  --accent-ring-color: rgba(115, 159, 64, 0.12);
+  --accent-glow-color: rgba(115, 159, 64, 0.42);
+  --accent-soft-glow: rgba(115, 159, 64, 0.2);
+
+  --selection-text: #ffffff;
+
+  --hero-pointer-glow: rgba(115, 159, 64, 0.12);
+  --hero-secondary-glow: rgba(144, 185, 69, 0.075);
+
+  --card-pointer-glow: rgba(115, 159, 64, 0.09);
+  --media-glow-color: rgba(115, 159, 64, 0.26);
+
+  --star-color: #90b945;
+  --star-glow: rgba(115, 159, 64, 0.26);
+
+  --conversion-glow: rgba(115, 159, 64, 0.2);
+
+  --button-primary-text: #ffffff;
+  --button-primary-shadow: rgba(144, 185, 69, 0.28);
+  --button-primary-hover-shadow: rgba(115, 159, 64, 0.42);
+
+  --nav-link-hover-background: rgba(115, 159, 64, 0.1);
+  --dropdown-link-hover-background: rgba(115, 159, 64, 0.13);
+  --social-hover-background: rgba(115, 159, 64, 0.11);
+
+  --faq-icon-background: rgba(115, 159, 64, 0.07);
+}
+
+
+/* ==========================================================================
+   2. DARK-PAGE GREEN CONTRAST
+   ========================================================================== */
+
+.site--dark {
+  --button-outline-text: #a4c568;
+  --button-outline-background: rgba(115, 159, 64, 0.025);
+  --button-outline-border: rgba(115, 159, 64, 0.6);
+
+  --button-outline-hover-text: #111111;
+  --button-outline-hover-background: #739f40;
+  --button-outline-hover-border: #739f40;
+  --button-outline-shadow: rgba(115, 159, 64, 0.2);
+
+  --nav-link-hover-color: #a4c568;
+  --nav-link-active-color: #a4c568;
+
+  --dropdown-link-hover-color: #a4c568;
+
+  --menu-toggle-color: #a4c568;
+  --menu-toggle-background: rgba(115, 159, 64, 0.055);
+  --menu-toggle-border: rgba(115, 159, 64, 0.54);
+
+  --sticky-header-shadow:
+    0 18px 52px rgba(0, 0, 0, 0.5),
+    0 1px 0 rgba(115, 159, 64, 0.14);
+
+  --card-hover-shadow:
+    0 34px 78px rgba(0, 0, 0, 0.52),
+    0 0 38px rgba(115, 159, 64, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  --media-frame-shadow:
+    0 32px 90px rgba(0, 0, 0, 0.52),
+    0 0 0 1px rgba(115, 159, 64, 0.18),
+    0 0 47px rgba(115, 159, 64, 0.12);
+
+  --trust-card-hover-shadow:
+    0 18px 37px rgba(0, 0, 0, 0.28),
+    0 0 24px rgba(115, 159, 64, 0.13);
+}
+
+
+/* ==========================================================================
+   3. LIGHT-PAGE GREEN CONTRAST
+   ========================================================================== */
+
+.site--light {
+  --button-outline-text: #4d7632;
+  --button-outline-background: rgba(255, 255, 255, 0.78);
+  --button-outline-border: rgba(144, 185, 69, 0.72);
+
+  --button-outline-hover-text: #111111;
+  --button-outline-hover-background: #739f40;
+  --button-outline-hover-border: #739f40;
+  --button-outline-shadow: rgba(144, 185, 69, 0.24);
+
+  --nav-link-hover-color: #4d7632;
+  --nav-link-active-color: #4d7632;
+
+  --dropdown-link-hover-color: #4d7632;
+
+  --menu-toggle-color: #4d7632;
+  --menu-toggle-background: rgba(255, 255, 255, 0.78);
+  --menu-toggle-border: rgba(144, 185, 69, 0.58);
+
+  --sticky-header-shadow:
+    0 18px 52px rgba(17, 17, 17, 0.16),
+    0 1px 0 rgba(144, 185, 69, 0.18);
+
+  --card-hover-shadow:
+    0 32px 72px rgba(17, 17, 17, 0.15),
+    0 0 34px rgba(115, 159, 64, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
+
+  --media-frame-shadow:
+    0 32px 80px rgba(17, 17, 17, 0.13),
+    0 0 0 1px rgba(144, 185, 69, 0.2),
+    0 0 40px rgba(115, 159, 64, 0.12);
+
+  --trust-card-hover-shadow:
+    0 18px 38px rgba(17, 17, 17, 0.11),
+    0 0 24px rgba(115, 159, 64, 0.12);
+}
+
+
+/* ==========================================================================
+   4. DARK-PAGE GREEN AMBIENT BACKGROUNDS
+   ========================================================================== */
+
+.site--dark .section {
+  background:
+    radial-gradient(
+      circle at 78% 22%,
+      rgba(115, 159, 64, 0.095),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 85%,
+      rgba(144, 185, 69, 0.065),
+      transparent 25%
+    ),
+    var(--section-background);
+}
+
+.site--dark .section:nth-of-type(even) {
+  background:
+    radial-gradient(
+      circle at 17% 18%,
+      rgba(115, 159, 64, 0.07),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 92% 88%,
+      rgba(144, 185, 69, 0.055),
+      transparent 23%
+    ),
+    var(--section-background);
+}
+
+.site--dark .section--about {
+  background:
+    radial-gradient(
+      circle at 78% 27%,
+      rgba(115, 159, 64, 0.12),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 8% 86%,
+      rgba(144, 185, 69, 0.07),
+      transparent 24%
+    ),
+    #080808;
+}
+
+.site--dark .section--proof {
+  background:
+    radial-gradient(
+      circle at 73% 26%,
+      rgba(115, 159, 64, 0.1),
+      transparent 26%
+    ),
+    #090909;
+}
+
+.site--dark .section--process {
+  background:
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(115, 159, 64, 0.11),
+      transparent 27%
+    ),
+    #080808;
+}
+
+.site--dark .section--services,
+.site--dark .section--reviews,
+.site--dark .section--faq {
+  background:
+    radial-gradient(
+      circle at 78% 24%,
+      rgba(115, 159, 64, 0.11),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 8% 84%,
+      rgba(144, 185, 69, 0.07),
+      transparent 25%
+    ),
+    #080808;
+}
+
+.site--dark .hero {
+  background:
+    radial-gradient(
+      circle at
+      var(--pointer-x, 72%)
+      var(--pointer-y, 22%),
+      rgba(115, 159, 64, 0.12),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 78%,
+      rgba(144, 185, 69, 0.075),
+      transparent 25%
+    ),
+    #080808;
+}
+
+
+/* ==========================================================================
+   5. LIGHT-PAGE GREEN AMBIENT BACKGROUNDS
+   ========================================================================== */
+
+.site--light .section {
+  background:
+    radial-gradient(
+      circle at 78% 22%,
+      rgba(115, 159, 64, 0.075),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 85%,
+      rgba(144, 185, 69, 0.045),
+      transparent 25%
+    ),
+    var(--section-background);
+}
+
+.site--light .section:nth-of-type(even) {
+  background:
+    radial-gradient(
+      circle at 17% 18%,
+      rgba(115, 159, 64, 0.055),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 92% 88%,
+      rgba(144, 185, 69, 0.04),
+      transparent 23%
+    ),
+    var(--section-background);
+}
+
+.site--light .section--about {
+  background:
+    radial-gradient(
+      circle at 78% 27%,
+      rgba(115, 159, 64, 0.085),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 8% 86%,
+      rgba(144, 185, 69, 0.045),
+      transparent 24%
+    ),
+    #f7f7f4;
+}
+
+.site--light .section--proof {
+  background:
+    radial-gradient(
+      circle at 73% 26%,
+      rgba(115, 159, 64, 0.065),
+      transparent 26%
+    ),
+    #ffffff;
+}
+
+.site--light .section--process {
+  background:
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(115, 159, 64, 0.075),
+      transparent 27%
+    ),
+    #f7f7f4;
+}
+
+.site--light .section--services {
+  background:
+    radial-gradient(
+      circle at 78% 24%,
+      rgba(115, 159, 64, 0.075),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 8% 84%,
+      rgba(144, 185, 69, 0.045),
+      transparent 25%
+    ),
+    #ffffff;
+}
+
+.site--light .section--reviews {
+  background:
+    radial-gradient(
+      circle at 76% 24%,
+      rgba(115, 159, 64, 0.07),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 6% 82%,
+      rgba(144, 185, 69, 0.045),
+      transparent 25%
+    ),
+    #f7f7f4;
+}
+
+.site--light .section--faq {
+  background:
+    radial-gradient(
+      circle at 76% 22%,
+      rgba(115, 159, 64, 0.07),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 86%,
+      rgba(144, 185, 69, 0.045),
+      transparent 25%
+    ),
+    #ffffff;
+}
+
+.site--light .hero {
+  background:
+    radial-gradient(
+      circle at
+      var(--pointer-x, 72%)
+      var(--pointer-y, 22%),
+      rgba(115, 159, 64, 0.095),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 80%,
+      rgba(144, 185, 69, 0.055),
+      transparent 25%
+    ),
+    #ffffff;
+}
+
+
+/* ==========================================================================
+   6. GREEN CARD LIGHTING
+   ========================================================================== */
+
+.site--dark .about-card {
+  background:
+    radial-gradient(
+      circle at 87% 12%,
+      rgba(115, 159, 64, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(28, 28, 28, 0.97),
+      rgba(10, 10, 10, 0.99)
+    );
+}
+
+.site--light .about-card {
+  background:
+    radial-gradient(
+      circle at 87% 12%,
+      rgba(115, 159, 64, 0.085),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(247, 247, 244, 0.97)
+    );
+}
+
+.site--dark .proof-metric,
+.site--dark .process-card,
+.site--dark .review-card,
+.site--dark .faq-item {
+  background:
+    radial-gradient(
+      circle at
+      var(--pointer-x, 50%)
+      var(--pointer-y, 30%),
+      rgba(115, 159, 64, 0.095),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(27, 27, 27, 0.98),
+      rgba(11, 11, 11, 0.99)
+    );
+}
+
+.site--light .proof-metric,
+.site--light .process-card,
+.site--light .review-card,
+.site--light .faq-item {
+  background:
+    radial-gradient(
+      circle at
+      var(--pointer-x, 50%)
+      var(--pointer-y, 30%),
+      rgba(115, 159, 64, 0.075),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.99),
+      rgba(247, 247, 244, 0.98)
+    );
+}
+
+
+/* ==========================================================================
+   7. SERVICE AND CONVERSION ACCENTS
+   ========================================================================== */
+
+.site--dark .service-card__wide-copy {
+  background:
+    radial-gradient(
+      circle at 92% 12%,
+      rgba(115, 159, 64, 0.14),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #191919,
+      #0d0d0d
+    );
+}
+
+.site--light .service-card__wide-copy {
+  background:
+    radial-gradient(
+      circle at 92% 12%,
+      rgba(115, 159, 64, 0.095),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f4f4f1
+    );
+}
+
+.site--dark .site-footer,
+.site--light .site-footer {
+  background:
+    radial-gradient(
+      circle at 84% 10%,
+      rgba(115, 159, 64, 0.1),
+      transparent 24%
+    ),
+    var(--footer-background);
+}
+
+
+/* ==========================================================================
+   8. FAQ, NAVIGATION, AND ICON DETAILS
+   ========================================================================== */
+
+.site--dark .faq-item button i {
+  color: #a4c568;
+  background: rgba(115, 159, 64, 0.065);
+  border-color: rgba(115, 159, 64, 0.42);
+}
+
+.site--light .faq-item button i {
+  color: #4d7632;
+  background: rgba(115, 159, 64, 0.075);
+  border-color: rgba(144, 185, 69, 0.52);
+}
+
+.site--dark .faq-item button > span,
+.site--light .faq-item button > span {
+  transition:
+    color var(--transition-normal),
+    background-color var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+.site--dark .brand:hover img,
+.site--dark .brand:focus-visible img,
+.site--light .brand:hover img,
+.site--light .brand:focus-visible img {
+  filter:
+    drop-shadow(
+      0 9px 13px
+      rgba(54, 84, 35, 0.22)
+    );
+}
+
+
+/* ==========================================================================
+   9. GREEN SCROLLBARS
+   ========================================================================== */
+
+@supports selector(::-webkit-scrollbar) {
+  html[data-theme="dark"]::-webkit-scrollbar-thumb,
+  html[data-theme="dark"] *::-webkit-scrollbar-thumb,
+  html[data-theme="light"]::-webkit-scrollbar-thumb,
+  html[data-theme="light"] *::-webkit-scrollbar-thumb {
+    background:
+      linear-gradient(
+        180deg,
+        #abc96f,
+        #efb12f
+      );
+  }
+
+  html[data-theme="dark"]::-webkit-scrollbar-thumb:hover,
+  html[data-theme="dark"] *::-webkit-scrollbar-thumb:hover,
+  html[data-theme="light"]::-webkit-scrollbar-thumb:hover,
+  html[data-theme="light"] *::-webkit-scrollbar-thumb:hover {
+    background:
+      linear-gradient(
+        180deg,
+        #bad582,
+        #739f40
+      );
+  }
+}
+
+html[data-theme="dark"],
+html[data-theme="light"] {
+  scrollbar-color:
+    #739f40
+    var(--page-background);
+}
+
+
+/* ==========================================================================
+   10. HIGH-CONTRAST SUPPORT
+   ========================================================================== */
+
+@media (prefers-contrast: more) {
+  .site--dark {
+    --button-outline-text: #b0ce76;
+    --nav-link-hover-color: #b0ce76;
+    --nav-link-active-color: #b0ce76;
+    --dropdown-link-hover-color: #b0ce76;
+  }
+
+  .site--light {
+    --button-outline-text: #3d5e28;
+    --nav-link-hover-color: #3d5e28;
+    --nav-link-active-color: #3d5e28;
+    --dropdown-link-hover-color: #3d5e28;
+  }
+}

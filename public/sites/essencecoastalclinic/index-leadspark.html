@@ -1,0 +1,2166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Essence Coastal Clinic | Same-Day Urgent Care in Gulfport, MS</title>
+
+  <meta name="description" content="Essence Coastal Clinic provides same-day urgent care, DOT physicals, sports and employment physicals, TB skin testing, and compassionate appointment-based care in Gulfport, MS." />
+  <meta name="keywords" content="Essence Coastal Clinic, Gulfport urgent care, same day clinic Gulfport MS, DOT physicals Gulfport MS, TB skin testing, sports physicals, employment physicals, urgent care Gulfport" />
+  <meta name="author" content="Essence Coastal Clinic" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Essence Coastal Clinic | Same-Day Urgent Care in Gulfport, MS" />
+  <meta property="og:description" content="Compassionate urgent care, DOT physicals, sports and employment physicals, TB skin testing, and appointment-based care in Gulfport, MS." />
+  <meta property="og:image" content="assets/img/imgi_37_08D_MilwyDEA29J.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style-blue.css" />
+
+  <style>
+    /* =========================================================
+       ESSENCE COASTAL CLINIC
+       Premium Light Blue Healthcare Landing Page Override
+       This intentionally overrides style-blue.css.
+    ========================================================= */
+
+    :root {
+      --ecc-navy: #062B4F;
+      --ecc-navy-2: #084272;
+      --ecc-blue: #0B7FE8;
+      --ecc-blue-2: #1DA1F2;
+      --ecc-sky: #DFF3FF;
+      --ecc-ice: #F6FBFF;
+      --ecc-cloud: #EEF8FF;
+      --ecc-white: #FFFFFF;
+      --ecc-ink: #102337;
+      --ecc-muted: #5D7186;
+      --ecc-gold: #D7AA55;
+      --ecc-gold-light: #F2D58D;
+      --ecc-line: rgba(11, 127, 232, 0.14);
+      --ecc-shadow: 0 26px 80px rgba(6, 43, 79, 0.14);
+      --ecc-shadow-blue: 0 30px 90px rgba(11, 127, 232, 0.22);
+      --ecc-radius: 28px;
+      --font-heading: "Minerva Modern", "PT Serif", Georgia, serif;
+      --font-body: "PT Serif", Georgia, serif;
+      --font-ui: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--ecc-ice);
+      color: var(--ecc-ink);
+      font-family: var(--font-body);
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    [data-reveal] {
+      opacity: 1;
+      transform: none;
+    }
+
+    .js-enabled [data-reveal] {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.72s ease, transform 0.72s ease;
+    }
+
+    .js-enabled [data-reveal].is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section {
+      position: relative;
+      padding: 105px 0;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--ecc-blue);
+      font-family: var(--font-ui);
+      font-size: 12px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: var(--font-heading);
+      letter-spacing: -0.04em;
+    }
+
+    h1 {
+      max-width: 690px;
+      margin-bottom: 18px;
+      color: var(--ecc-white);
+      font-size: clamp(44px, 6vw, 82px);
+      font-weight: 900;
+      line-height: 0.95;
+      text-transform: uppercase;
+      text-shadow: 0 20px 48px rgba(0, 0, 0, 0.34);
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      color: var(--ecc-ink);
+      font-size: clamp(34px, 4.2vw, 58px);
+      font-weight: 900;
+      line-height: 1.02;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 23px;
+      font-weight: 900;
+      line-height: 1.12;
+    }
+
+    p {
+      color: rgba(16, 35, 55, 0.76);
+      font-size: 17px;
+      line-height: 1.74;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .section-heading {
+      max-width: 820px;
+      margin: 0 auto 46px;
+    }
+
+    .section-heading p {
+      color: rgba(16, 35, 55, 0.70);
+    }
+
+    /* =========================================================
+       NAV / HERO
+    ========================================================= */
+
+    .site-header {
+      position: relative;
+      min-height: 820px;
+      background:
+        radial-gradient(circle at 78% 18%, rgba(223, 243, 255, 0.70), transparent 34%),
+        linear-gradient(135deg, var(--ecc-navy), var(--ecc-blue));
+      color: var(--ecc-white);
+      overflow: hidden;
+    }
+
+    .nav-wrap {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: 50;
+      width: min(1180px, calc(100% - 40px));
+      height: 96px;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 136px;
+      height: auto;
+      filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.26));
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      padding: 10px 10px 10px 24px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.90);
+      border: 1px solid rgba(255, 255, 255, 0.58);
+      box-shadow:
+        0 18px 48px rgba(6, 43, 79, 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.80);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .nav-links::before {
+      content: none !important;
+      display: none !important;
+    }
+
+    .mobile-menu-image {
+      display: none !important;
+    }
+
+    .nav-links a {
+      color: var(--ecc-navy);
+      text-decoration: none;
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 900;
+      line-height: 1;
+      transition: color 0.18s ease, transform 0.18s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--ecc-blue);
+      transform: translateY(-1px);
+    }
+
+    .nav-links .nav-call {
+      padding: 14px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--ecc-gold), var(--ecc-gold-light));
+      color: var(--ecc-navy);
+      font-weight: 950;
+      box-shadow: 0 16px 34px rgba(215, 170, 85, 0.30);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      border: 0;
+      border-radius: 999px;
+      background: var(--ecc-white);
+      cursor: pointer;
+      box-shadow: 0 18px 34px rgba(6, 43, 79, 0.24);
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      margin: 5px auto;
+      border-radius: 999px;
+      background: var(--ecc-navy);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 820px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-bg,
+    .hero-bg img,
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: scale(1.02);
+    }
+
+    .hero-overlay {
+      background:
+        radial-gradient(circle at 72% 16%, rgba(255, 255, 255, 0.38), transparent 30%),
+        linear-gradient(90deg, rgba(6, 43, 79, 0.96) 0%, rgba(8, 66, 114, 0.84) 34%, rgba(11, 127, 232, 0.34) 62%, rgba(246, 251, 255, 0.12) 100%),
+        linear-gradient(180deg, rgba(6, 43, 79, 0.08) 0%, rgba(6, 43, 79, 0.46) 100%);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 170px;
+      background:
+        linear-gradient(180deg, rgba(246, 251, 255, 0), var(--ecc-ice));
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      width: min(1180px, calc(100% - 40px));
+      max-width: 730px;
+      margin: 0 auto;
+      margin-left: max(20px, calc((100vw - 1180px) / 2));
+      padding-top: 100px;
+    }
+
+    .hero-content::before {
+      content: "";
+      position: absolute;
+      inset: -36px -42px -36px -42px;
+      z-index: -1;
+      border-radius: 38px;
+      background:
+        linear-gradient(135deg, rgba(6, 43, 79, 0.62), rgba(6, 43, 79, 0.20));
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 36px 100px rgba(6, 43, 79, 0.28);
+      backdrop-filter: blur(5px);
+    }
+
+    .hero .eyebrow {
+      color: var(--ecc-gold-light);
+    }
+
+    .hero h2 {
+      max-width: 650px;
+      color: rgba(255, 255, 255, 0.94);
+      font-size: clamp(24px, 2.8vw, 36px);
+      text-transform: none;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-copy {
+      max-width: 620px;
+      margin-bottom: 26px;
+      color: rgba(255, 255, 255, 0.86);
+      font-size: 18px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      min-height: 54px;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 24px;
+      border: 0;
+      border-radius: 999px;
+      text-decoration: none;
+      font-family: var(--font-ui);
+      font-size: 14px;
+      line-height: 1;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--ecc-gold), var(--ecc-gold-light));
+      color: var(--ecc-navy);
+      box-shadow: 0 18px 38px rgba(215, 170, 85, 0.30);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.11);
+      color: var(--ecc-white);
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.14);
+      backdrop-filter: blur(12px);
+    }
+
+    .btn-dark {
+      width: 100%;
+      background: linear-gradient(135deg, var(--ecc-blue), var(--ecc-navy));
+      color: var(--ecc-white);
+      border-radius: 999px;
+      box-shadow: 0 18px 38px rgba(11, 127, 232, 0.24);
+    }
+
+    .hero-proof {
+      display: grid;
+      gap: 8px;
+      margin-top: 30px;
+      color: rgba(255, 255, 255, 0.92);
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .hero-proof span::before {
+      content: "✓";
+      margin-right: 8px;
+      color: var(--ecc-gold-light);
+    }
+
+    /* =========================================================
+       TRUST PANEL
+    ========================================================= */
+
+    .trust-strip {
+      position: relative;
+      z-index: 10;
+      margin-top: -86px;
+      padding: 0 0 48px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow: hidden;
+      border-radius: 34px;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(246, 251, 255, 0.94));
+      border: 1px solid rgba(255, 255, 255, 0.80);
+      box-shadow: 0 30px 90px rgba(6, 43, 79, 0.20);
+    }
+
+    .trust-grid div {
+      min-height: 150px;
+      padding: 28px;
+      border-right: 1px solid rgba(11, 127, 232, 0.14);
+      color: var(--ecc-ink);
+      position: relative;
+    }
+
+    .trust-grid div::before {
+      content: "";
+      display: block;
+      width: 44px;
+      height: 44px;
+      margin-bottom: 15px;
+      border-radius: 16px;
+      background:
+        radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.8), transparent 35%),
+        linear-gradient(135deg, var(--ecc-blue), var(--ecc-navy));
+      box-shadow: 0 16px 34px rgba(11, 127, 232, 0.22);
+    }
+
+    .trust-grid div:last-child {
+      border-right: 0;
+    }
+
+    .trust-grid strong,
+    .trust-grid span {
+      display: block;
+    }
+
+    .trust-grid strong {
+      margin-bottom: 8px;
+      color: var(--ecc-navy);
+      font-family: var(--font-heading);
+      font-size: 21px;
+      line-height: 1.1;
+    }
+
+    .trust-grid span {
+      color: rgba(16, 35, 55, 0.70);
+      font-family: var(--font-ui);
+      font-size: 13px;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+
+    /* =========================================================
+       SERVICES
+    ========================================================= */
+
+    .services-section {
+      background:
+        radial-gradient(circle at 16% 4%, rgba(11, 127, 232, 0.12), transparent 32%),
+        linear-gradient(180deg, var(--ecc-ice) 0%, var(--ecc-white) 100%);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      overflow: hidden;
+      border-radius: 30px;
+      background: var(--ecc-white);
+      color: var(--ecc-ink);
+      border: 1px solid var(--ecc-line);
+      box-shadow: var(--ecc-shadow);
+      transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(11, 127, 232, 0.30);
+      box-shadow: var(--ecc-shadow-blue);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .service-card-body {
+      padding: 24px 21px 26px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      color: var(--ecc-navy);
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .service-card p {
+      margin-bottom: 14px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .service-card ul {
+      margin: 0 0 18px;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 7px;
+    }
+
+    .service-card li {
+      position: relative;
+      padding-left: 19px;
+      color: rgba(16, 35, 55, 0.76);
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    .service-card li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--ecc-blue);
+      font-weight: 900;
+    }
+
+    .small-btn {
+      display: inline-flex;
+      min-height: 42px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--ecc-blue), var(--ecc-blue-2));
+      color: var(--ecc-white);
+      text-decoration: none;
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 950;
+      box-shadow: 0 14px 30px rgba(11, 127, 232, 0.20);
+    }
+
+    /* =========================================================
+       WHO WE HELP — VISUAL REBUILD
+    ========================================================= */
+
+    .audience-section {
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 84% 8%, rgba(29, 161, 242, 0.20), transparent 30%),
+        linear-gradient(135deg, #F6FBFF 0%, #E9F7FF 44%, #FFFFFF 100%);
+    }
+
+    .audience-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(11, 127, 232, 0.045) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(11, 127, 232, 0.045) 1px, transparent 1px);
+      background-size: 56px 56px;
+      opacity: 0.55;
+      pointer-events: none;
+    }
+
+    .audience-section .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .audience-card {
+      position: relative;
+      min-height: 270px;
+      padding: 30px;
+      border-radius: 32px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.76));
+      border: 1px solid rgba(11, 127, 232, 0.14);
+      box-shadow: var(--ecc-shadow);
+      overflow: hidden;
+      transition: transform 0.24s ease, box-shadow 0.24s ease;
+    }
+
+    .audience-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--ecc-shadow-blue);
+    }
+
+    .audience-card::before {
+      content: "";
+      position: absolute;
+      right: -46px;
+      top: -46px;
+      width: 138px;
+      height: 138px;
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(11, 127, 232, 0.22), transparent 70%);
+    }
+
+    .audience-card span {
+      display: inline-flex;
+      width: 54px;
+      height: 54px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, var(--ecc-blue), var(--ecc-navy));
+      color: var(--ecc-white);
+      font-family: var(--font-ui);
+      font-weight: 950;
+      box-shadow: 0 16px 34px rgba(11, 127, 232, 0.22);
+    }
+
+    .audience-card h3 {
+      color: var(--ecc-navy);
+      text-transform: uppercase;
+    }
+
+    .audience-card p {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+
+    /* =========================================================
+       ABOUT / TWO COLUMN
+    ========================================================= */
+
+    .about-section {
+      background: var(--ecc-white);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(36px, 5vw, 78px);
+      align-items: center;
+    }
+
+    .image-panel img {
+      width: 100%;
+      min-height: 480px;
+      object-fit: cover;
+      border-radius: 36px;
+      box-shadow: var(--ecc-shadow);
+    }
+
+    .content-panel h2 {
+      color: var(--ecc-navy);
+    }
+
+    .content-panel p {
+      max-width: 660px;
+    }
+
+    .feature-pills {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .feature-pills span {
+      display: flex;
+      min-height: 54px;
+      align-items: center;
+      padding: 14px 18px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, var(--ecc-blue), var(--ecc-navy));
+      color: var(--ecc-white);
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 900;
+      box-shadow: 0 14px 34px rgba(11, 127, 232, 0.18);
+    }
+
+    /* =========================================================
+       WHAT TO EXPECT — TIMELINE CARDS
+    ========================================================= */
+
+    .process-section {
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(11, 127, 232, 0.16), transparent 30%),
+        linear-gradient(180deg, #FFFFFF 0%, #F4FBFF 100%);
+    }
+
+    .process-section::after {
+      content: "";
+      position: absolute;
+      left: 8%;
+      right: 8%;
+      top: 58%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(11, 127, 232, 0.24), transparent);
+      pointer-events: none;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .process-card {
+      min-height: 240px;
+      padding: 30px;
+      border-radius: 30px;
+      background: var(--ecc-white);
+      border: 1px solid rgba(11, 127, 232, 0.14);
+      box-shadow: var(--ecc-shadow);
+      transition: transform 0.24s ease, box-shadow 0.24s ease;
+    }
+
+    .process-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--ecc-shadow-blue);
+    }
+
+    .process-card span {
+      display: inline-flex;
+      width: 58px;
+      height: 58px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--ecc-gold), var(--ecc-gold-light));
+      color: var(--ecc-navy);
+      font-family: var(--font-ui);
+      font-size: 20px;
+      font-weight: 950;
+      box-shadow: 0 16px 34px rgba(215, 170, 85, 0.24);
+    }
+
+    .process-card h3 {
+      color: var(--ecc-navy);
+      text-transform: uppercase;
+    }
+
+    .process-card p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    /* =========================================================
+       WHY CHOOSE
+    ========================================================= */
+
+    .why-section {
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 84% 14%, rgba(11, 127, 232, 0.12), transparent 34%),
+        linear-gradient(180deg, var(--ecc-ice), var(--ecc-white));
+    }
+
+    .texture-bg {
+      position: absolute;
+      inset: 0;
+      opacity: 0.16;
+      pointer-events: none;
+    }
+
+    .texture-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .why-section .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .reason-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .reason-grid div {
+      min-height: 116px;
+      padding: 18px;
+      border-radius: 18px;
+      background: var(--ecc-white);
+      color: var(--ecc-ink);
+      border: 1px solid rgba(11, 127, 232, 0.13);
+      box-shadow: 0 18px 42px rgba(6, 43, 79, 0.07);
+    }
+
+    .reason-grid strong,
+    .reason-grid span {
+      display: block;
+    }
+
+    .reason-grid strong {
+      margin-bottom: 8px;
+      color: var(--ecc-blue);
+      font-family: var(--font-heading);
+      font-size: 15px;
+      line-height: 1.24;
+      text-transform: uppercase;
+    }
+
+    .reason-grid span {
+      color: rgba(16, 35, 55, 0.72);
+      font-family: var(--font-ui);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /* =========================================================
+       AUTOMATION
+    ========================================================= */
+
+    .automation-section {
+      padding: 96px 0;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 82% 16%, rgba(255, 255, 255, 0.24), transparent 30%),
+        linear-gradient(135deg, var(--ecc-navy) 0%, var(--ecc-blue) 60%, var(--ecc-blue-2) 100%);
+    }
+
+    .automation-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 12% 86%, rgba(255, 255, 255, 0.16), transparent 28%),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+      background-size: 74px 74px;
+      opacity: 0.45;
+      pointer-events: none;
+    }
+
+    .automation-card {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 34px;
+      align-items: center;
+      padding: clamp(30px, 5vw, 58px);
+      border-radius: 38px;
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.08));
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      box-shadow: 0 32px 100px rgba(6, 43, 79, 0.34);
+      backdrop-filter: blur(12px);
+    }
+
+    .automation-card h2,
+    .automation-card p {
+      color: var(--ecc-white);
+    }
+
+    .automation-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .automation-list span {
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      color: var(--ecc-white);
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .automation-list span::before {
+      content: "✓";
+      margin-right: 9px;
+      color: var(--ecc-gold-light);
+    }
+
+    /* =========================================================
+       TESTIMONIAL
+    ========================================================= */
+
+    .testimonial-section {
+      padding: 82px 0;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.28), transparent 34%),
+        linear-gradient(135deg, var(--ecc-gold), #C7943F);
+      color: var(--ecc-navy);
+      text-align: center;
+    }
+
+    .testimonial-section blockquote {
+      max-width: 850px;
+      margin: 0 auto 18px;
+      font-family: var(--font-heading);
+      font-size: clamp(28px, 4vw, 50px);
+      line-height: 1.06;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+    }
+
+    .testimonial-section cite {
+      color: rgba(6, 43, 79, 0.74);
+      font-style: normal;
+      font-family: var(--font-ui);
+      font-size: 15px;
+      font-weight: 900;
+    }
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact-section {
+      background:
+        radial-gradient(circle at top right, rgba(29, 161, 242, 0.18), transparent 34%),
+        linear-gradient(180deg, var(--ecc-navy), #07355F);
+      color: var(--ecc-white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.88fr;
+      gap: clamp(34px, 5vw, 78px);
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      color: var(--ecc-white);
+    }
+
+    .contact-info p {
+      color: rgba(255, 255, 255, 0.80);
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 18px;
+      margin: 26px 0;
+    }
+
+    .contact-list div {
+      display: grid;
+      gap: 5px;
+    }
+
+    .contact-list strong {
+      color: var(--ecc-gold-light);
+      font-family: var(--font-ui);
+      font-size: 15px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .contact-list a,
+    .contact-list span {
+      color: rgba(255, 255, 255, 0.92);
+      text-decoration: none;
+      font-family: var(--font-ui);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .map-box {
+      overflow: hidden;
+      min-height: 265px;
+      border-radius: 26px;
+      border: 2px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 24px 58px rgba(0, 0, 0, 0.26);
+    }
+
+    .map-box iframe {
+      width: 100%;
+      height: 310px;
+      display: block;
+      border: 0;
+    }
+
+    .appointment-card {
+      padding: 34px;
+      border-radius: 34px;
+      background: var(--ecc-white);
+      color: var(--ecc-ink);
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      box-shadow: 0 34px 90px rgba(0, 0, 0, 0.24);
+    }
+
+    .form-header h3,
+    .appointment-card h3 {
+      margin-bottom: 8px;
+      color: var(--ecc-navy);
+      font-size: 36px;
+      text-transform: uppercase;
+    }
+
+    .appointment-card p {
+      font-size: 15px;
+    }
+
+    .clinic-form {
+      display: grid;
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .clinic-form label {
+      display: grid;
+      gap: 7px;
+      color: var(--ecc-ink);
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .clinic-form input,
+    .clinic-form select,
+    .clinic-form textarea,
+    .newsletter-form input {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid rgba(11, 127, 232, 0.22);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--ecc-ink);
+      font: inherit;
+      outline: none;
+    }
+
+    .clinic-form textarea {
+      border-radius: 16px;
+      resize: vertical;
+    }
+
+    .clinic-form input:focus,
+    .clinic-form select:focus,
+    .clinic-form textarea:focus,
+    .newsletter-form input:focus {
+      border-color: var(--ecc-blue);
+      box-shadow: 0 0 0 4px rgba(11, 127, 232, 0.14);
+    }
+
+    .form-note {
+      margin: 0;
+      font-size: 12px !important;
+      color: rgba(16, 35, 55, 0.58) !important;
+      text-align: center;
+    }
+
+    /* =========================================================
+       FINAL CTA PARALLAX
+    ========================================================= */
+
+    .final-cta {
+      position: relative;
+      min-height: 540px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      color: var(--ecc-white);
+      text-align: center;
+      isolation: isolate;
+    }
+
+    .final-cta > img {
+      position: absolute;
+      inset: -18% 0;
+      width: 100%;
+      height: 136%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0;
+      z-index: -3;
+    }
+
+    .final-cta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background-image: url("assets/img/imgi_84.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .final-cta-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at center, rgba(29, 161, 242, 0.22), transparent 42%),
+        linear-gradient(90deg, rgba(6, 43, 79, 0.90), rgba(11, 127, 232, 0.58)),
+        rgba(6, 43, 79, 0.72);
+    }
+
+    .final-cta-content {
+      position: relative;
+      z-index: 2;
+      width: min(820px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+
+    .final-cta h2 {
+      color: var(--ecc-white);
+      text-shadow: 0 18px 44px rgba(0, 0, 0, 0.30);
+    }
+
+    .final-cta p {
+      color: rgba(255, 255, 255, 0.90);
+    }
+
+    .final-cta .hero-actions {
+      justify-content: center;
+    }
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    .site-footer {
+      background: #062B4F;
+      color: var(--ecc-white);
+      padding: 76px 0 34px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.8fr 1.1fr 1.1fr;
+      gap: 34px;
+      align-items: start;
+    }
+
+    .footer-logo {
+      width: 138px;
+      margin-bottom: 20px;
+    }
+
+    .site-footer p {
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 15px;
+    }
+
+    .site-footer h4 {
+      margin: 0 0 18px;
+      color: var(--ecc-gold-light);
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .site-footer a {
+      display: block;
+      margin-bottom: 9px;
+      color: rgba(255, 255, 255, 0.84);
+      text-decoration: none;
+      font-family: var(--font-ui);
+      font-size: 14px;
+    }
+
+    .site-footer a:hover {
+      color: var(--ecc-gold-light);
+    }
+
+    .newsletter-form {
+      display: grid;
+      gap: 10px;
+    }
+
+    .newsletter-form button {
+      min-height: 44px;
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--ecc-gold), var(--ecc-gold-light));
+      color: var(--ecc-navy);
+      font-weight: 950;
+      cursor: pointer;
+    }
+
+    .footer-bottom {
+      width: min(1180px, calc(100% - 40px));
+      margin: 34px auto 0;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255, 255, 255, 0.16);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+      font-family: var(--font-ui);
+      font-size: 12px;
+    }
+
+    .footer-bottom a {
+      color: var(--ecc-gold-light);
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .footer-credit-line {
+      white-space: nowrap;
+    }
+
+    /* =========================================================
+       MOBILE STICKY CTA
+    ========================================================= */
+
+    .mobile-sticky-cta {
+      display: none;
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      z-index: 100;
+      gap: 8px;
+      padding: 8px;
+      border-radius: 999px;
+      background: rgba(6, 43, 79, 0.94);
+      box-shadow: 0 18px 44px rgba(0, 0, 0, 0.28);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    .mobile-sticky-cta a {
+      flex: 1;
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      text-decoration: none;
+      font-family: var(--font-ui);
+      font-size: 13px;
+      font-weight: 950;
+    }
+
+    .mobile-sticky-cta a:first-child {
+      background: var(--ecc-white);
+      color: var(--ecc-navy);
+    }
+
+    .mobile-sticky-cta a:last-child {
+      background: linear-gradient(135deg, var(--ecc-gold), var(--ecc-gold-light));
+      color: var(--ecc-navy);
+    }
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+
+    @media (max-width: 1080px) {
+      .nav-links {
+        gap: 16px;
+      }
+
+      .service-grid,
+      .audience-grid,
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .trust-grid div:nth-child(2) {
+        border-right: 0;
+      }
+
+      .trust-grid div:nth-child(1),
+      .trust-grid div:nth-child(2) {
+        border-bottom: 1px solid rgba(11, 127, 232, 0.14);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .site-header,
+      .hero {
+        min-height: 770px;
+      }
+
+      .nav-wrap {
+        height: 82px;
+      }
+
+      .brand img {
+        width: 112px;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+        position: relative;
+        z-index: 70;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 82px;
+        left: 20px;
+        right: 20px;
+        z-index: 60;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 16px;
+        border-radius: 26px;
+        background:
+          linear-gradient(180deg, rgba(6, 43, 79, 0.98), rgba(11, 127, 232, 0.96));
+        border: 1px solid rgba(215, 170, 85, 0.34);
+        box-shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
+        max-height: calc(100vh - 104px);
+        overflow-y: auto;
+      }
+
+      body.menu-open .nav-links {
+        display: flex;
+      }
+
+      .mobile-menu-image {
+        display: block !important;
+        width: 100%;
+        margin: 0 0 14px 0;
+      }
+
+      .mobile-menu-image img {
+        width: 100%;
+        height: 156px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px;
+        box-shadow:
+          0 20px 44px rgba(0, 0, 0, 0.28),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+      }
+
+      .nav-links a {
+        padding: 15px 12px;
+        border-radius: 14px;
+        color: var(--ecc-white);
+        font-family: var(--font-heading);
+        font-size: 18px;
+        letter-spacing: -0.015em;
+      }
+
+      .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.08);
+      }
+
+      .nav-links .nav-call {
+        margin-top: 8px;
+        text-align: center;
+        color: var(--ecc-navy);
+        font-family: var(--font-ui);
+        font-size: 14px;
+      }
+
+      .hero-content {
+        width: min(100% - 40px, 680px);
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 112px;
+      }
+
+      .hero-content::before {
+        inset: -24px;
+      }
+
+      .hero-overlay {
+        background:
+          linear-gradient(90deg, rgba(6, 43, 79, 0.94) 0%, rgba(8, 66, 114, 0.78) 100%),
+          linear-gradient(180deg, rgba(6, 43, 79, 0.12), rgba(6, 43, 79, 0.62));
+      }
+
+      .two-col,
+      .contact-grid,
+      .automation-card {
+        grid-template-columns: 1fr;
+      }
+
+      .reverse-mobile .image-panel {
+        order: -1;
+      }
+
+      .image-panel img {
+        min-height: 360px;
+      }
+
+      .section {
+        padding: 76px 0;
+      }
+
+      .final-cta::before {
+        background-attachment: scroll;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .hero-content {
+        width: min(100% - 28px, 680px);
+      }
+
+      .service-grid,
+      .audience-grid,
+      .process-grid,
+      .reason-grid,
+      .feature-pills,
+      .form-row,
+      .footer-grid,
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-strip {
+        margin-top: -42px;
+      }
+
+      .trust-grid div {
+        border-right: 0;
+        border-bottom: 1px solid rgba(11, 127, 232, 0.14);
+      }
+
+      .trust-grid div:last-child {
+        border-bottom: 0;
+      }
+
+      .service-card img {
+        height: 214px;
+      }
+
+      .testimonial-section blockquote {
+        font-size: 28px;
+      }
+
+      .appointment-card {
+        padding: 24px 18px;
+        border-radius: 26px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .footer-credit-line {
+        white-space: normal;
+      }
+
+      .mobile-sticky-cta {
+        display: flex;
+      }
+
+      .site-footer {
+        padding-bottom: 96px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      h2 {
+        font-size: 32px;
+      }
+
+      .hero {
+        min-height: 730px;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .map-box iframe {
+        height: 250px;
+      }
+
+      .mobile-menu-image img {
+        height: 135px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Essence Coastal Clinic",
+    "description": "Compassionate urgent care, DOT physicals, sports and employment physicals, TB skin testing, and appointment-based care in Gulfport, MS.",
+    "telephone": "+1-228-224-7741",
+    "email": "info@essencecoastalclinic.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "15277 Creosote Rd",
+      "addressLocality": "Gulfport",
+      "addressRegion": "MS",
+      "postalCode": "39503",
+      "addressCountry": "US"
+    },
+    "areaServed": "Gulfport, MS",
+    "medicalSpecialty": "Urgent Care",
+    "openingHours": [
+      "Mo-Sa 08:00-18:00"
+    ],
+    "url": ""
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- =========================================================
+  HEADER / HERO
+  ========================================================== -->
+  <header class="site-header" id="top">
+    <nav class="nav-wrap">
+      <a href="#top" class="brand" aria-label="Essence Coastal Clinic Home">
+        <img src="assets/img/imgi_91_imagfvuhge+64.png" alt="Essence Coastal Clinic logo" />
+      </a>
+
+      <button class="mobile-menu-btn" type="button" aria-label="Open Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <div class="mobile-menu-image" aria-hidden="true">
+          <img src="assets/img/imgi_37_08D_MilwyDEA29J.jpg" alt="">
+        </div>
+
+        <a href="#top">Home</a>
+        <a href="#services">Services</a>
+        <a href="#patients">Patients</a>
+        <a href="#expect">What To Expect</a>
+        <a href="#about">About</a>
+        <a href="#appointment">Book Appointment</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-call" href="tel:+12282247741">Call Now | 228-224-7741</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="assets/img/imgi_37_08D_MilwyDEA29J.jpg" alt="Patient speaking with provider at Essence Coastal Clinic" />
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content" data-reveal>
+        <p class="eyebrow">Same-Day Care In Gulfport, MS</p>
+
+        <h1>Need Care Today Without The ER Wait?</h1>
+
+        <h2>Compassionate urgent care for families, workers, students, and seniors.</h2>
+
+        <p class="hero-copy">
+          Essence Coastal Clinic helps patients get timely care, required testing, and professional physicals with a smoother appointment experience close to home.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+          <a href="tel:+12282247741" class="btn btn-secondary">Call Clinic</a>
+        </div>
+
+        <div class="hero-proof">
+          <span>Same-day appointment requests</span>
+          <span>DOT, sports, employment, and TB testing services</span>
+          <span>Care for infants, children, adults, and seniors</span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- =========================================================
+  PREMIUM TRUST STRIP
+  ========================================================== -->
+  <section class="trust-strip" aria-label="Clinic trust highlights">
+    <div class="container trust-grid">
+      <div data-reveal>
+        <strong>Same-Day Access</strong>
+        <span>Request care without a confusing scheduling process.</span>
+      </div>
+
+      <div data-reveal>
+        <strong>Required Physicals</strong>
+        <span>DOT, sports, school, and employment exams.</span>
+      </div>
+
+      <div data-reveal>
+        <strong>Testing Support</strong>
+        <span>TB skin testing and common urgent care testing needs.</span>
+      </div>
+
+      <div data-reveal>
+        <strong>Local Care</strong>
+        <span>Professional healthcare close to home in Gulfport.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  SERVICES
+  ========================================================== -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-heading center" data-reveal>
+        <p class="eyebrow">Our Services</p>
+        <h2>Care That Helps You Move Forward</h2>
+        <p>
+          Whether you are sick, need required paperwork, or need testing for work or school, Essence Coastal Clinic is built to make the next step simple.
+        </p>
+      </div>
+
+      <div class="service-grid">
+
+        <article class="service-card" data-reveal>
+          <img src="assets/img/imgi_42.jpg" alt="Acute illness and testing visit" />
+          <div class="service-card-body">
+            <h3>Acute Illness & Testing</h3>
+            <p>Evaluation and treatment for common illness concerns, infections, minor conditions, and rapid testing needs.</p>
+            <ul>
+              <li>Cold and flu symptoms</li>
+              <li>Fever and infections</li>
+              <li>Rapid testing needs</li>
+              <li>Minor urgent care concerns</li>
+            </ul>
+            <a href="#appointment" class="small-btn">Request Sick Visit</a>
+          </div>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <img src="assets/img/imgi_48.jpg" alt="DOT physical appointment" />
+          <div class="service-card-body">
+            <h3>DOT Physicals</h3>
+            <p>Professional Department of Transportation physicals completed with clarity, care, and proper documentation support.</p>
+            <ul>
+              <li>Driver medical exams</li>
+              <li>Certified evaluations</li>
+              <li>Documentation support</li>
+              <li>Compliance-focused visit flow</li>
+            </ul>
+            <a href="#appointment" class="small-btn">Book DOT Physical</a>
+          </div>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <img src="assets/img/imgi_54.jpg" alt="Sports and employment physical" />
+          <div class="service-card-body">
+            <h3>Sports & Employment Physicals</h3>
+            <p>Routine physical evaluations for school sports, job requirements, workplace screenings, and wellness needs.</p>
+            <ul>
+              <li>School sports clearance</li>
+              <li>Employment exams</li>
+              <li>Student physicals</li>
+              <li>Adult assessments</li>
+            </ul>
+            <a href="#appointment" class="small-btn">Schedule Physical</a>
+          </div>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <img src="assets/img/imgi_60.jpg" alt="TB skin testing" />
+          <div class="service-card-body">
+            <h3>TB Skin Testing</h3>
+            <p>Convenient tuberculosis skin testing services for schools, workplaces, healthcare compliance, and required screenings.</p>
+            <ul>
+              <li>Quick testing visit</li>
+              <li>Follow-up reading</li>
+              <li>Workplace requirements</li>
+              <li>School documentation</li>
+            </ul>
+            <a href="#appointment" class="small-btn">Book TB Test</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  WHO WE HELP
+  ========================================================== -->
+  <section class="section audience-section" id="patients">
+    <div class="container">
+      <div class="section-heading center" data-reveal>
+        <p class="eyebrow">Who We Help</p>
+        <h2>Healthcare Support For Real Life Needs</h2>
+        <p>
+          Patients usually arrive with one concern: they need care, answers, testing, or paperwork handled correctly without unnecessary delay.
+        </p>
+      </div>
+
+      <div class="audience-grid">
+        <div class="audience-card" data-reveal>
+          <span>01</span>
+          <h3>Parents & Families</h3>
+          <p>Care for children, adults, and seniors with a local clinic experience that feels personal and respectful.</p>
+        </div>
+
+        <div class="audience-card" data-reveal>
+          <span>02</span>
+          <h3>Drivers & Workers</h3>
+          <p>DOT physicals, employment exams, and required medical documentation for work-related needs.</p>
+        </div>
+
+        <div class="audience-card" data-reveal>
+          <span>03</span>
+          <h3>Students & Athletes</h3>
+          <p>Sports, school, and activity physicals designed to help families meet deadlines and requirements.</p>
+        </div>
+
+        <div class="audience-card" data-reveal>
+          <span>04</span>
+          <h3>Local Patients</h3>
+          <p>Urgent care and testing support for people who want compassionate care without an ER-level experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  ABOUT
+  ========================================================== -->
+  <section class="section about-section" id="about">
+    <div class="container two-col">
+      <div class="image-panel" data-reveal>
+        <img src="assets/img/imgi_66.jpg" alt="Provider speaking with patient at Essence Coastal Clinic" />
+      </div>
+
+      <div class="content-panel" data-reveal>
+        <p class="eyebrow">About Essence Coastal Clinic</p>
+        <h2>Compassionate Healthcare Designed Around Your Family</h2>
+        <p>
+          At Essence Coastal Clinic, care is designed to feel professional, local, and human. Patients should not feel rushed, confused, or ignored when they need help.
+        </p>
+        <p>
+          Whether you need treatment for illness, required testing, a work physical, or a school-related exam, our goal is to make care simple, respectful, and efficient.
+        </p>
+
+        <div class="feature-pills">
+          <span>Compassionate Patient Care</span>
+          <span>Convenient Appointments</span>
+          <span>Monday–Saturday Availability</span>
+          <span>Serving All Ages</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  WHAT TO EXPECT
+  ========================================================== -->
+  <section class="section process-section" id="expect">
+    <div class="container">
+      <div class="section-heading center" data-reveal>
+        <p class="eyebrow">What To Expect</p>
+        <h2>A Clearer Path To Care</h2>
+        <p>
+          A better clinic experience starts before the visit. We make the first step easier so patients know what happens next.
+        </p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-card" data-reveal>
+          <span>1</span>
+          <h3>Request Appointment</h3>
+          <p>Choose the service you need and submit a simple appointment request.</p>
+        </div>
+
+        <div class="process-card" data-reveal>
+          <span>2</span>
+          <h3>Receive Follow-Up</h3>
+          <p>A clinic team member follows up to help confirm scheduling and next steps.</p>
+        </div>
+
+        <div class="process-card" data-reveal>
+          <span>3</span>
+          <h3>Visit The Clinic</h3>
+          <p>Arrive for care, testing, paperwork, or your required physical.</p>
+        </div>
+
+        <div class="process-card" data-reveal>
+          <span>4</span>
+          <h3>Move Forward</h3>
+          <p>Leave with care guidance, testing next steps, or documentation when applicable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  WHY CHOOSE US
+  ========================================================== -->
+  <section class="section why-section" id="why">
+    <div class="texture-bg">
+      <img src="assets/img/imgi_72.jpg" alt="" aria-hidden="true" />
+    </div>
+
+    <div class="container two-col reverse-mobile">
+      <div class="content-panel" data-reveal>
+        <p class="eyebrow">Why Patients Choose Us</p>
+        <h2>Trusted Urgent Care With Compassionate Service</h2>
+        <p>
+          When patients need care, they want more than a form and a waiting room. They want clarity, kindness, professionalism, and confidence that the visit will be handled correctly.
+        </p>
+
+        <div class="reason-grid">
+          <div>
+            <strong>1. Compassionate Care</strong>
+            <span>Friendly, respectful service for children, adults, seniors, and families.</span>
+          </div>
+
+          <div>
+            <strong>2. Care For All Ages</strong>
+            <span>Support for infants, children, adults, seniors, and family care needs.</span>
+          </div>
+
+          <div>
+            <strong>3. Convenient Scheduling</strong>
+            <span>Simple appointment requests designed to reduce delays and confusion.</span>
+          </div>
+
+          <div>
+            <strong>4. Minimal Wait Times</strong>
+            <span>Appointment-based access designed to support a smoother clinic visit.</span>
+          </div>
+
+          <div>
+            <strong>5. Professional Medical Support</strong>
+            <span>Reliable evaluations, testing, and physicals delivered with care.</span>
+          </div>
+
+          <div>
+            <strong>6. Local Community Focused</strong>
+            <span>Quality healthcare close to home for the surrounding Gulfport community.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-panel" data-reveal>
+        <img src="assets/img/imgi_78.jpg" alt="Essence Coastal Clinic medical team" />
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  LEADSPARK AUTOMATION LAYER
+  ========================================================== -->
+  <section class="automation-section" aria-label="Convenient digital support">
+    <div class="container automation-card" data-reveal>
+      <div>
+        <p class="eyebrow">Convenient Digital Support</p>
+        <h2>Care Starts Before The Visit</h2>
+        <p>
+          This website is prepared for appointment routing, missed-call text-back, service-specific follow-up, review requests, and clinic communication workflows if Essence Coastal Clinic activates the LeadSpark automation layer.
+        </p>
+      </div>
+
+      <div class="automation-list">
+        <span>Appointment Request Routing</span>
+        <span>Missed-Call Text-Back Ready</span>
+        <span>Service-Based Follow-Up Ready</span>
+        <span>Review Request Workflow Ready</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  TESTIMONIAL
+  ========================================================== -->
+  <section class="testimonial-section">
+    <div class="container" data-reveal>
+      <blockquote>
+        “From the moment we walked in, the staff made us feel comfortable and cared for. The clinic was clean, professional, and the appointment process was quick and easy.”
+      </blockquote>
+      <cite>— Sarah M.</cite>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  CONTACT / APPOINTMENT
+  ========================================================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-grid">
+
+      <div class="contact-info" data-reveal>
+        <p class="eyebrow">Get In Touch</p>
+        <h2>We’re Here When You Need Care</h2>
+        <p>
+          Contact Essence Coastal Clinic to request an appointment or ask general questions about services.
+        </p>
+
+        <div class="contact-list">
+          <div>
+            <strong>Call Us</strong>
+            <a href="tel:+12282247741">228-224-7741</a>
+          </div>
+
+          <div>
+            <strong>Email</strong>
+            <a href="mailto:info@essencecoastalclinic.com">info@essencecoastalclinic.com</a>
+          </div>
+
+          <div>
+            <strong>Service Area</strong>
+            <span>15277 Creosote Rd, Gulfport, MS 39503</span>
+          </div>
+
+          <div>
+            <strong>Office Hours</strong>
+            <span>Monday–Saturday: 8:00 AM–6:00 PM</span>
+            <span>Sunday: Closed</span>
+          </div>
+        </div>
+
+        <div class="map-box">
+          <iframe
+            title="Essence Coastal Clinic Map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=15277%20Creosote%20Rd%20Gulfport%20MS%2039503&output=embed">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="appointment-card" id="appointment" data-reveal>
+        <div class="form-header">
+          <p class="eyebrow">Request Care</p>
+          <h3>Request An Appointment</h3>
+          <p>
+            Please complete the form below. Do not submit sensitive medical information through this form.
+          </p>
+        </div>
+
+        <form class="clinic-form" id="clinicForm" data-leadspark-ready="true">
+          <input type="hidden" name="source" value="Essence Coastal Clinic Website" />
+          <input type="hidden" name="pageVersion" value="Premium Light Blue Landing Page" />
+
+          <div class="form-row">
+            <label>
+              First Name
+              <input type="text" name="firstName" autocomplete="given-name" required />
+            </label>
+
+            <label>
+              Last Name
+              <input type="text" name="lastName" autocomplete="family-name" required />
+            </label>
+          </div>
+
+          <label>
+            Phone
+            <input type="tel" name="phone" autocomplete="tel" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" />
+          </label>
+
+          <label>
+            Service Needed
+            <select name="service" required>
+              <option value="">Select a service</option>
+              <option>Acute Illness & Testing</option>
+              <option>DOT Physical</option>
+              <option>Sports / Employment Physical</option>
+              <option>TB Skin Testing</option>
+              <option>General Appointment</option>
+            </select>
+          </label>
+
+          <label>
+            Preferred Contact Method
+            <select name="preferredContact">
+              <option value="">Select preference</option>
+              <option>Phone Call</option>
+              <option>Text Message</option>
+              <option>Email</option>
+            </select>
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Please do not include sensitive medical details."></textarea>
+          </label>
+
+          <button type="submit" class="btn btn-dark">Submit Appointment Request</button>
+
+          <p class="form-note">
+            A team member will follow up to help with scheduling. For emergencies, call 911 or visit the nearest emergency facility.
+          </p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+  FINAL CTA
+  ========================================================== -->
+  <section class="final-cta">
+    <img src="assets/img/imgi_84.jpg" alt="Essence Coastal Clinic front desk" />
+
+    <div class="final-cta-overlay"></div>
+
+    <div class="final-cta-content" data-reveal>
+      <p class="eyebrow">Ready When You Need Us</p>
+      <h2>Need Medical Attention Today?</h2>
+      <p>
+        Fast, professional urgent care services for infants, children, adults, and seniors — conveniently close to home.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+        <a href="tel:+12282247741" class="btn btn-secondary">Call Clinic</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+  FOOTER
+  ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img class="footer-logo" src="assets/img/imgi_90_imagfvuhge+64.png" alt="Essence Coastal Clinic logo" />
+        <p>Compassionate Care. Coastal Commitment.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="#top">Home</a>
+        <a href="#services">Services</a>
+        <a href="#patients">Patients</a>
+        <a href="#expect">What To Expect</a>
+        <a href="#appointment">Book Appointment</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h4>Contact Info</h4>
+        <a href="tel:+12282247741">228-224-7741</a>
+        <a href="mailto:info@essencecoastalclinic.com">info@essencecoastalclinic.com</a>
+        <p>15277 Creosote Rd<br>Gulfport, MS 39503</p>
+      </div>
+
+      <div>
+        <h4>Never Miss An Update</h4>
+        <p>Sign up for clinic updates and wellness reminders.</p>
+
+        <form class="newsletter-form">
+          <input type="email" placeholder="Email Address" />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Essence Coastal Clinic. All rights reserved.</p>
+
+      <p class="footer-credit">
+        <span class="footer-credit-line">Designed&nbsp;with&nbsp;&#x2764;&nbsp;by&nbsp;<a href="https://standardamericanweb.com" target="_blank" rel="noopener">Standard American Web™</a>.</span>
+      </p>
+    </div>
+  </footer>
+
+  <div class="mobile-sticky-cta">
+    <a href="tel:+12282247741">Call Now</a>
+    <a href="#appointment">Book Appointment</a>
+  </div>
+
+  <script src="assets/js/main-blue.js"></script>
+</body>
+</html>

@@ -1,0 +1,1034 @@
+/* ==========================================================================
+   FILE: light-theme.css
+   PROJECT: Gulf Coast Builders HTML5 Template
+
+   PURPOSE:
+   Light/day color system for light.html.
+
+   DEPENDENCY:
+   Load css/base.css before this file.
+
+   LOAD ORDER:
+   1. css/base.css
+   2. css/light-theme.css
+
+   FUTURE THEME METHOD:
+   Duplicate this file, rename it, and change the custom properties in
+   Section 1 to create green, blue, red, or niche-specific versions.
+   ========================================================================== */
+
+
+/* ==========================================================================
+   1. LIGHT THEME TOKENS
+   ========================================================================== */
+
+html[data-theme="light"],
+.site--light {
+  color-scheme: light;
+
+  --page-background: #ffffff;
+  --section-background: #ffffff;
+  --hero-background: #ffffff;
+  --header-background: #ffffff;
+
+  --surface-color: #ffffff;
+  --surface-soft-color: #f5f5f2;
+  --surface-raised-color: #eeeeea;
+
+  --text-color: #181818;
+  --heading-color: #111111;
+  --muted-color: #6f6f6f;
+  --muted-soft-color: #949494;
+
+  --accent-color: #ff6600;
+  --accent-light: #ffb347;
+  --accent-bright: #ff8a00;
+  --accent-deep: #e84b00;
+
+  --accent-border: rgba(255, 102, 0, 0.38);
+  --accent-ring-color: rgba(255, 102, 0, 0.09);
+  --accent-glow-color: rgba(255, 102, 0, 0.32);
+  --accent-soft-glow: rgba(255, 122, 0, 0.14);
+
+  --selection-text: #ffffff;
+
+  --grid-line-color: rgba(17, 17, 17, 0.035);
+  --grid-opacity: 0.34;
+  --hero-grid-opacity: 0.36;
+
+  --hero-pointer-glow: rgba(255, 102, 0, 0.09);
+  --hero-secondary-glow: rgba(255, 102, 0, 0.045);
+
+  --card-background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.99),
+      rgba(247, 247, 244, 0.98)
+    );
+
+  --card-text-color: #181818;
+  --card-border: rgba(17, 17, 17, 0.1);
+
+  --card-shadow:
+    0 18px 43px rgba(17, 17, 17, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+  --card-hover-shadow:
+    0 32px 72px rgba(17, 17, 17, 0.15),
+    0 0 34px rgba(255, 102, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.98);
+
+  --card-pointer-glow: rgba(255, 102, 0, 0.07);
+
+  --glass-card-background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.94),
+      rgba(247, 247, 244, 0.96)
+    );
+
+  --media-background: #111111;
+  --media-inner-border: rgba(17, 17, 17, 0.11);
+
+  --media-frame-shadow:
+    0 32px 80px rgba(17, 17, 17, 0.13),
+    0 0 0 1px rgba(255, 102, 0, 0.12),
+    0 0 40px rgba(255, 102, 0, 0.08);
+
+  --media-glow-color: rgba(255, 127, 0, 0.2);
+
+  --trust-card-background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.98),
+      rgba(244, 244, 241, 0.94)
+    );
+
+  --trust-card-border: rgba(17, 17, 17, 0.1);
+  --trust-card-shadow:
+    0 13px 28px rgba(17, 17, 17, 0.07);
+
+  --trust-card-hover-shadow:
+    0 18px 38px rgba(17, 17, 17, 0.11),
+    0 0 24px rgba(255, 102, 0, 0.08);
+
+  --avatar-border: #ffffff;
+  --large-number-color: rgba(17, 17, 17, 0.1);
+  --process-line-background: rgba(17, 17, 17, 0.12);
+
+  --star-color: #ff9500;
+  --star-glow: rgba(255, 149, 0, 0.18);
+
+  --conversion-background:
+    linear-gradient(
+      145deg,
+      #1b1b1b,
+      #0d0d0d
+    );
+
+  --conversion-heading-color: #ffffff;
+  --conversion-text-color: rgba(255, 255, 255, 0.7);
+  --conversion-border: rgba(255, 255, 255, 0.1);
+  --conversion-glow: rgba(255, 102, 0, 0.17);
+
+  --conversion-shadow:
+    0 27px 65px rgba(17, 17, 17, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  --service-wide-background:
+    radial-gradient(
+      circle at 92% 12%,
+      rgba(255, 102, 0, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f4f4f1
+    );
+
+  --faq-number-background: rgba(17, 17, 17, 0.04);
+  --faq-icon-background: rgba(255, 102, 0, 0.05);
+
+  --review-circle-border: rgba(17, 17, 17, 0.06);
+
+  --button-primary-text: #ffffff;
+  --button-primary-shadow: rgba(255, 102, 0, 0.24);
+  --button-primary-hover-shadow: rgba(255, 102, 0, 0.36);
+
+  --button-outline-text: #e84b00;
+  --button-outline-background: rgba(255, 255, 255, 0.7);
+  --button-outline-border: rgba(255, 102, 0, 0.58);
+
+  --button-outline-hover-text: #ffffff;
+  --button-outline-hover-background: #ff6600;
+  --button-outline-hover-border: #ff6600;
+  --button-outline-shadow: rgba(255, 102, 0, 0.2);
+
+  --utility-background: #050505;
+  --utility-text-color: rgba(255, 255, 255, 0.7);
+  --utility-status-color: rgba(255, 255, 255, 0.53);
+  --utility-border: rgba(255, 255, 255, 0.07);
+
+  --social-link-color: rgba(255, 255, 255, 0.61);
+  --social-link-border: rgba(255, 255, 255, 0.07);
+  --social-hover-background: rgba(255, 102, 0, 0.09);
+
+  --primary-nav-background: #ffffff;
+  --primary-nav-border: rgba(17, 17, 17, 0.1);
+
+  --nav-text-color: #181818;
+
+  --nav-panel-background:
+    linear-gradient(
+      110deg,
+      #ffffff 0%,
+      #f8f8f6 56%,
+      #ffffff 100%
+    );
+
+  --nav-pattern-color: rgba(17, 17, 17, 0.025);
+  --nav-pattern-opacity: 0.28;
+
+  --sticky-nav-panel-background: rgba(255, 255, 255, 0.82);
+  --sticky-nav-border: rgba(17, 17, 17, 0.11);
+
+  --sticky-nav-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    0 12px 30px rgba(17, 17, 17, 0.08);
+
+  --sticky-header-shadow:
+    0 18px 52px rgba(17, 17, 17, 0.16),
+    0 1px 0 rgba(255, 102, 0, 0.11);
+
+  --nav-link-color: rgba(17, 17, 17, 0.82);
+  --nav-link-hover-color: #e84b00;
+  --nav-link-active-color: #e84b00;
+  --nav-link-hover-background: rgba(255, 102, 0, 0.08);
+
+  --dropdown-background: rgba(255, 255, 255, 0.97);
+  --dropdown-border: rgba(17, 17, 17, 0.11);
+
+  --dropdown-shadow:
+    0 28px 62px rgba(17, 17, 17, 0.17),
+    0 0 35px rgba(255, 102, 0, 0.055);
+
+  --dropdown-link-color: rgba(17, 17, 17, 0.76);
+  --dropdown-link-hover-color: #e84b00;
+  --dropdown-link-hover-background: rgba(255, 102, 0, 0.09);
+
+  --menu-toggle-color: #e84b00;
+  --menu-toggle-background: rgba(255, 255, 255, 0.7);
+  --menu-toggle-border: rgba(255, 102, 0, 0.45);
+
+  --mobile-menu-background: rgba(255, 255, 255, 0.985);
+  --mobile-menu-border: rgba(17, 17, 17, 0.1);
+
+  --mobile-menu-shadow:
+    0 28px 55px rgba(17, 17, 17, 0.16);
+
+  --mobile-link-color: rgba(17, 17, 17, 0.82);
+  --mobile-link-background: #f3f3f0;
+  --mobile-link-border: rgba(17, 17, 17, 0.08);
+
+  --mobile-dropdown-background: #ecece9;
+  --mobile-dropdown-link-background: #ffffff;
+
+  --footer-background: #1a1a1a;
+  --footer-heading-color: #ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.7);
+  --footer-border: rgba(255, 255, 255, 0.1);
+}
+
+
+/* ==========================================================================
+   2. DOCUMENT BACKGROUND
+   ========================================================================== */
+
+html[data-theme="light"],
+html[data-theme="light"] body,
+.site--light {
+  background:
+    var(--page-background);
+}
+
+.site--light {
+  color:
+    var(--text-color);
+}
+
+
+/* ==========================================================================
+   3. LIGHT SECTION BACKGROUNDS
+   ========================================================================== */
+
+.site--light .section {
+  --section-background: #ffffff;
+
+  color:
+    var(--text-color);
+
+  background:
+    radial-gradient(
+      circle at 78% 22%,
+      rgba(255, 102, 0, 0.065),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 85%,
+      rgba(255, 102, 0, 0.035),
+      transparent 25%
+    ),
+    var(--section-background);
+}
+
+.site--light .section:nth-of-type(even) {
+  --section-background: #f7f7f4;
+
+  background:
+    radial-gradient(
+      circle at 17% 18%,
+      rgba(255, 102, 0, 0.045),
+      transparent 25%
+    ),
+    radial-gradient(
+      circle at 92% 88%,
+      rgba(255, 102, 0, 0.035),
+      transparent 23%
+    ),
+    var(--section-background);
+}
+
+.site--light .section--about {
+  --section-background: #f7f7f4;
+
+  background:
+    radial-gradient(
+      circle at 78% 27%,
+      rgba(255, 102, 0, 0.075),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 8% 86%,
+      rgba(255, 102, 0, 0.035),
+      transparent 24%
+    ),
+    #f7f7f4;
+}
+
+.site--light .section--proof {
+  --section-background: #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 73% 26%,
+      rgba(255, 102, 0, 0.055),
+      transparent 26%
+    ),
+    #ffffff;
+}
+
+.site--light .section--process {
+  --section-background: #f7f7f4;
+
+  background:
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(255, 102, 0, 0.06),
+      transparent 27%
+    ),
+    #f7f7f4;
+}
+
+.site--light .section--services {
+  --section-background: #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 78% 24%,
+      rgba(255, 102, 0, 0.065),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 8% 84%,
+      rgba(255, 102, 0, 0.035),
+      transparent 25%
+    ),
+    #ffffff;
+}
+
+.site--light .section--reviews {
+  --section-background: #f7f7f4;
+
+  background:
+    radial-gradient(
+      circle at 76% 24%,
+      rgba(255, 102, 0, 0.06),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 6% 82%,
+      rgba(255, 102, 0, 0.035),
+      transparent 25%
+    ),
+    #f7f7f4;
+}
+
+.site--light .section--faq {
+  --section-background: #ffffff;
+
+  background:
+    radial-gradient(
+      circle at 76% 22%,
+      rgba(255, 102, 0, 0.06),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 86%,
+      rgba(255, 102, 0, 0.035),
+      transparent 25%
+    ),
+    #ffffff;
+}
+
+
+/* ==========================================================================
+   4. LIGHT HEADER DETAILS
+   ========================================================================== */
+
+.site--light .site-header {
+  background:
+    #ffffff;
+}
+
+.site--light .primary-nav {
+  background:
+    #ffffff;
+}
+
+.site--light .primary-nav__grid {
+  background:
+    #ffffff;
+}
+
+.site--light .site-header.is-sticky
+.primary-nav,
+.site--light .site-header.is-sticky
+.primary-nav__grid {
+  background:
+    transparent;
+}
+
+.site--light .brand img {
+  filter:
+    none;
+}
+
+.site--light .brand:hover img,
+.site--light .brand:focus-visible img {
+  filter:
+    drop-shadow(
+      0 9px 13px
+      rgba(77, 24, 0, 0.2)
+    );
+}
+
+.site--light .site-header.is-sticky
+.primary-nav__menu-panel {
+  background:
+    rgba(255, 255, 255, 0.82);
+
+  backdrop-filter:
+    blur(21px)
+    saturate(125%);
+
+  -webkit-backdrop-filter:
+    blur(21px)
+    saturate(125%);
+}
+
+.site--light .main-nav__dropdown {
+  color:
+    #181818;
+}
+
+
+/* ==========================================================================
+   5. LIGHT HERO
+   ========================================================================== */
+
+.site--light .hero {
+  color:
+    #181818;
+
+  background:
+    radial-gradient(
+      circle at
+      var(--pointer-x, 72%)
+      var(--pointer-y, 22%),
+      rgba(255, 102, 0, 0.09),
+      transparent 27%
+    ),
+    radial-gradient(
+      circle at 7% 80%,
+      rgba(255, 102, 0, 0.045),
+      transparent 25%
+    ),
+    #ffffff;
+}
+
+.site--light .hero h1 {
+  color:
+    #111111;
+}
+
+.site--light .hero .eyebrow--location {
+  color:
+    #777777;
+}
+
+.site--light .trust-carousel::before {
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.site--light .trust-carousel::after {
+  background:
+    linear-gradient(
+      270deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+}
+
+
+/* ==========================================================================
+   6. LIGHT CARDS AND TYPOGRAPHY
+   ========================================================================== */
+
+.site--light .glass-card,
+.site--light .proof-metric,
+.site--light .process-card,
+.site--light .service-card,
+.site--light .review-card,
+.site--light .faq-item {
+  color:
+    #181818;
+}
+
+.site--light .glass-card h2,
+.site--light .glass-card h3,
+.site--light .proof-metric h3,
+.site--light .process-card h3,
+.site--light .service-card h3,
+.site--light .review-card h3,
+.site--light .faq-item button {
+  color:
+    #111111;
+}
+
+.site--light .about-card {
+  background:
+    radial-gradient(
+      circle at 87% 12%,
+      rgba(255, 102, 0, 0.07),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.96),
+      rgba(247, 247, 244, 0.97)
+    );
+}
+
+.site--light .metric strong {
+  color:
+    #111111;
+}
+
+.site--light .proof-metric,
+.site--light .process-card,
+.site--light .review-card,
+.site--light .faq-item {
+  background:
+    radial-gradient(
+      circle at
+      var(--pointer-x, 50%)
+      var(--pointer-y, 30%),
+      rgba(255, 102, 0, 0.065),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.99),
+      rgba(247, 247, 244, 0.98)
+    );
+}
+
+.site--light .proof-metric:hover,
+.site--light .proof-metric:focus-visible,
+.site--light .process-card:hover,
+.site--light .process-card:focus-visible,
+.site--light .review-card:hover,
+.site--light .review-card:focus-visible,
+.site--light .faq-item:hover,
+.site--light .faq-item:focus-within,
+.site--light .faq-item.is-active {
+  border-color:
+    rgba(255, 102, 0, 0.42);
+}
+
+.site--light .process-card__node {
+  background:
+    #ffffff;
+}
+
+.site--light .review-card__avatar {
+  border-color:
+    #ffffff;
+}
+
+.site--light .rating-badge img {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f1f1ee
+    );
+}
+
+.site--light .rating-badge strong {
+  color:
+    #111111;
+}
+
+
+/* ==========================================================================
+   7. LIGHT SERVICES
+   ========================================================================== */
+
+.site--light .service-card {
+  background:
+    #ffffff;
+}
+
+.site--light .service-card--wide {
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f4f4f1
+    );
+}
+
+.site--light .service-card__wide-copy {
+  color:
+    #181818;
+
+  background:
+    radial-gradient(
+      circle at 92% 12%,
+      rgba(255, 102, 0, 0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f4f4f1
+    );
+}
+
+.site--light .service-card__wide-copy h3 {
+  color:
+    #111111;
+}
+
+
+/* ==========================================================================
+   8. LIGHT REVIEW MARQUEE EDGE FADES
+   ========================================================================== */
+
+.site--light .section--reviews {
+  --section-background: #f7f7f4;
+}
+
+.site--light .review-marquee::before {
+  background:
+    linear-gradient(
+      90deg,
+      #f7f7f4 10%,
+      rgba(247, 247, 244, 0) 100%
+    );
+}
+
+.site--light .review-marquee::after {
+  background:
+    linear-gradient(
+      270deg,
+      #f7f7f4 10%,
+      rgba(247, 247, 244, 0) 100%
+    );
+}
+
+
+/* ==========================================================================
+   9. LIGHT GOOGLE REVIEW CARDS
+   ========================================================================== */
+
+.site--light .review-card {
+  background:
+    radial-gradient(
+      circle at
+      var(--pointer-x, 50%)
+      var(--pointer-y, 25%),
+      rgba(255, 102, 0, 0.06),
+      transparent 34%
+    ),
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f6f6f3
+    );
+}
+
+.site--light .review-card::after {
+  border-color:
+    rgba(17, 17, 17, 0.06);
+}
+
+.site--light .review-card__google {
+  background:
+    #ffffff;
+
+  border-color:
+    rgba(17, 17, 17, 0.08);
+
+  box-shadow:
+    0 9px 22px
+    rgba(17, 17, 17, 0.12);
+}
+
+.site--light .review-card__text {
+  color:
+    #5f5f5f;
+}
+
+.site--light .review-card__verified {
+  color:
+    #777777;
+}
+
+
+/* ==========================================================================
+   10. LIGHT FAQ
+   ========================================================================== */
+
+.site--light .faq-item button > span {
+  color:
+    #666666;
+
+  background:
+    rgba(17, 17, 17, 0.04);
+
+  border-color:
+    rgba(17, 17, 17, 0.1);
+}
+
+.site--light .faq-item.is-active
+button > span {
+  color:
+    #ffffff;
+
+  border-color:
+    transparent;
+}
+
+.site--light .faq-item button i {
+  color:
+    #e84b00;
+
+  background:
+    rgba(255, 102, 0, 0.05);
+
+  border-color:
+    rgba(255, 102, 0, 0.32);
+}
+
+.site--light .contact-panel {
+  color:
+    #ffffff;
+}
+
+
+/* ==========================================================================
+   11. LIGHT FOOTER
+   ========================================================================== */
+
+.site--light .site-footer {
+  background:
+    radial-gradient(
+      circle at 84% 10%,
+      rgba(255, 102, 0, 0.09),
+      transparent 24%
+    ),
+    #1a1a1a;
+}
+
+.site--light .site-footer__brand img {
+  filter:
+    none;
+}
+
+.site--light .site-footer__column .button--primary {
+  color:
+    #ffffff;
+}
+
+
+/* ==========================================================================
+   12. LIGHT MOBILE MENU
+   ========================================================================== */
+
+@media (max-width: 1260px) {
+  .site--light .primary-nav__grid {
+    background:
+      #ffffff;
+  }
+
+  .site--light .site-header.is-sticky
+  .primary-nav__grid {
+    background:
+      transparent;
+  }
+
+  .site--light .main-nav {
+    color:
+      #181818;
+
+    background:
+      rgba(255, 255, 255, 0.985);
+  }
+
+  .site--light .main-nav__list > li > a,
+  .site--light .main-nav__more > button {
+    color:
+      rgba(17, 17, 17, 0.82);
+
+    background:
+      #f3f3f0;
+
+    border-color:
+      rgba(17, 17, 17, 0.08);
+  }
+
+  .site--light .main-nav__dropdown {
+    background:
+      #ecece9;
+  }
+
+  .site--light .main-nav__dropdown a {
+    color:
+      rgba(17, 17, 17, 0.78);
+
+    background:
+      #ffffff;
+  }
+}
+
+@media (max-width: 680px) {
+  .site--light .site-header.is-sticky
+  .primary-nav__menu-panel {
+    background:
+      rgba(255, 255, 255, 0.86);
+
+    backdrop-filter:
+      blur(17px)
+      saturate(120%);
+
+    -webkit-backdrop-filter:
+      blur(17px)
+      saturate(120%);
+  }
+}
+
+
+/* ==========================================================================
+   13. LIGHT SCROLLBARS
+   ========================================================================== */
+
+@supports selector(::-webkit-scrollbar) {
+  html[data-theme="light"]::-webkit-scrollbar,
+  html[data-theme="light"] *::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  html[data-theme="light"]::-webkit-scrollbar-track,
+  html[data-theme="light"] *::-webkit-scrollbar-track {
+    background:
+      #f3f3f0;
+  }
+
+  html[data-theme="light"]::-webkit-scrollbar-thumb,
+  html[data-theme="light"] *::-webkit-scrollbar-thumb {
+    background:
+      linear-gradient(
+        180deg,
+        #ff8a00,
+        #e84b00
+      );
+
+    border:
+      3px solid
+      #f3f3f0;
+
+    border-radius:
+      999px;
+  }
+
+  html[data-theme="light"]::-webkit-scrollbar-thumb:hover,
+  html[data-theme="light"] *::-webkit-scrollbar-thumb:hover {
+    background:
+      linear-gradient(
+        180deg,
+        #ff9d22,
+        #ff6600
+      );
+  }
+}
+
+html[data-theme="light"] {
+  scrollbar-color:
+    #ff6600
+    #f3f3f0;
+
+  scrollbar-width:
+    thin;
+}
+
+
+/* ==========================================================================
+   14. BACKDROP-FILTER FALLBACK
+   ========================================================================== */
+
+@supports not (
+  (backdrop-filter: blur(1px)) or
+  (-webkit-backdrop-filter: blur(1px))
+) {
+  .site--light .site-header.is-sticky
+  .primary-nav__menu-panel {
+    background:
+      rgba(255, 255, 255, 0.97);
+  }
+
+  .site--light .glass-card {
+    background:
+      rgba(255, 255, 255, 0.98);
+  }
+
+  .site--light .main-nav__dropdown {
+    background:
+      rgba(255, 255, 255, 0.99);
+  }
+}
+
+
+/* ==========================================================================
+   15. HIGH-CONTRAST SUPPORT
+   ========================================================================== */
+
+@media (prefers-contrast: more) {
+  html[data-theme="light"],
+  .site--light {
+    --muted-color: #4f4f4f;
+    --muted-soft-color: #666666;
+
+    --card-border:
+      rgba(17, 17, 17, 0.24);
+
+    --conversion-border:
+      rgba(255, 255, 255, 0.24);
+
+    --nav-link-color:
+      #111111;
+
+    --footer-text-color:
+      rgba(255, 255, 255, 0.86);
+  }
+
+  .site--light .button--outline {
+    border-width:
+      2px;
+  }
+}
+
+
+/* ==========================================================================
+   16. PRINT FALLBACK
+   ========================================================================== */
+
+@media print {
+  html[data-theme="light"],
+  html[data-theme="light"] body,
+  .site--light {
+    color:
+      #000000 !important;
+
+    background:
+      #ffffff !important;
+  }
+
+  .site--light .section,
+  .site--light .hero,
+  .site--light .site-footer {
+    color:
+      #000000 !important;
+
+    background:
+      #ffffff !important;
+  }
+
+  .site--light h1,
+  .site--light h2,
+  .site--light h3,
+  .site--light p,
+  .site--light li,
+  .site--light address {
+    color:
+      #000000 !important;
+  }
+
+  .site--light .site-header,
+  .site--light .site-header-spacer,
+  .site--light .button,
+  .site--light .review-marquees,
+  .site--light .social-links {
+    display:
+      none !important;
+  }
+
+  .site--light .glass-card,
+  .site--light .proof-metric,
+  .site--light .process-card,
+  .site--light .service-card,
+  .site--light .faq-item,
+  .site--light .contact-panel,
+  .site--light .conversion-bar {
+    color:
+      #000000 !important;
+
+    background:
+      #ffffff !important;
+
+    border:
+      1px solid
+      #cccccc !important;
+
+    box-shadow:
+      none !important;
+  }
+}
